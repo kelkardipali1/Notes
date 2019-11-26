@@ -18,5 +18,7 @@ public class NoteServiceTest {
     public void createANote() {
         Note note = noteService.create(new Note(2, "first Note", "first note"));
         Assert.assertEquals("first Note", note.getTitle());
+        Assert.assertEquals("first note", note.getDescription());
+
     }
 }
